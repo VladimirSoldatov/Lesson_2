@@ -1,10 +1,7 @@
 import pymorphy2
 with open("C:\\Users\\Samuel\\Downloads\\text.txt", encoding = 'utf-8') as file:
-
     temp_list = file.read().replace('?','').replace('!','').replace(',','').replace('.','')
     temp_list = temp_list.replace('«','').replace('—','').replace('»','').replace('\n',' ')
-
-
 morpy = pymorphy2.MorphAnalyzer()
 temp_list = temp_list.split()
 temp_list = list(map(str.lower, temp_list))
@@ -32,6 +29,8 @@ print(temp_dict2)
 #   File "C:/Users/Samuel/PycharmProjects/Lesson_2/Lesson_3.py", line 1, in <module>
 #     import pymorphy2
 # ModuleNotFoundError: No module named 'pymorphy2'
+#
+# Process finished with exit code 1
 #
 # Process finished with exit code 1
 
