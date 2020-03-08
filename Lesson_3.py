@@ -4,7 +4,7 @@ with open("C:\\Users\\Samuel\\Downloads\\text.txt", encoding = 'utf-8') as file:
     temp_list = file.read().replace('?','').replace('!','').replace(',','').replace('.','')
     temp_list = temp_list.replace('«','').replace('—','').replace('»','').replace('\n',' ')
 
-print(type(temp_list))
+
 morpy = pymorphy2.MorphAnalyzer()
 temp_list = temp_list.split()
 temp_list = list(map(str.lower, temp_list))
