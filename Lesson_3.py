@@ -1,5 +1,5 @@
 import pymorphy2
-with open("C:\\Users\\Samuel\\Downloads\\text.txt", encoding = 'utf-8') as file:
+with open("text.txt", encoding = 'utf-8') as file:
 
     temp_list = file.read().replace('?','').replace('!','').replace(',','').replace('.','')
     temp_list = temp_list.replace('«','').replace('—','').replace('»','').replace('\n',' ')
